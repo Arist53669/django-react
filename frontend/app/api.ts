@@ -6,10 +6,6 @@ const api = axios.create({
     baseURL: import.meta.env.VITE_API_URL
         ? import.meta.env.VITE_API_URL
         : apiUrl,
-    headers: {
-        "X-API-Key":
-            "chk_eyJjb25uZWN0aW9uLWlkIjoiMDFmMDE2OTItODkxZS0xODM4LTk4OGMtMTEyNGNmNDNjODQwIiwia2V5IjoiMG56NGdiYWQ3cnAxZGNmMjFiMDRicjJvZTBicjlsNHdiOHBkYWFxYXhrY3JjdzQ4b2hneiJ9zHjENw",
-    },
 });
 
 api.interceptors.request.use(
